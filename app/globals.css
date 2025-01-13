@@ -1,0 +1,121 @@
+/* Resetting styles */
+
+/* Resetting margins and paddings */
+html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Resetting lists */
+ul,
+ol,
+summary {
+  list-style: none;
+}
+
+/* Resetting hyperlinks */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Resetting forms */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  resize: none;
+}
+
+/* Reset image sizes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset the alignment of vertical element shapes */
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"] {
+  vertical-align: middle;
+}
+
+/* Styles */
+
+.home {
+  padding: 15px;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: clamp(0px, 100%, 290px);
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.calendar .calendar__action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.calendar .calendar__action > button {
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.calendar .calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar .calendar__days > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.calendar .calendar__days > li.disabled {
+  opacity: 0.5;
+}

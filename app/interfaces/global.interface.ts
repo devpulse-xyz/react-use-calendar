@@ -1,0 +1,1 @@
+export type TFalsy = false | null | undefined | 0 | '';
